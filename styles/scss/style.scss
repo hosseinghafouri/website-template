@@ -174,6 +174,32 @@ body {
     }
 }
 
+.progress {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+
+    span {
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: $sconderyColor;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: $textColor;
+    }
+
+}
+
 @include mediaQuarey(M){
     .hamburger-menu {
         display: flex !important;
